@@ -1,5 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import {
+  CommentNode,
   DocumentTree,
   DocumentTypeNode,
   ElementNode,
@@ -124,8 +125,14 @@ describe('DocumentTree', () => {
       new TextNode(tree.currentNode, { text: 'Go to Example Website' }),
     );
 
+    tree.addNode(
+      new CommentNode(tree.currentNode, {
+        comment: 'oh look a comment',
+      }),
+    );
+
     expect(tree.innerHtml).toEqual(
-      '<!DOCTYPE html><html><head><title>Hello</title><body><a href="https://www.example.com">Go to Example Website</a></body></head></html>',
+      '<!DOCTYPE html><html><head><title>Hello</title><body><a href="https://www.example.com">Go to Example Website<!--oh look a comment--></a></body></head></html>',
     );
 
     expect(tree.querySelector('title')?.textContent).toBeTruthy('Hello');
