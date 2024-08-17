@@ -1,0 +1,161 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DocumentTree > fundamentals > tree.innerHtml 1`] = `"<!DOCTYPE html><html><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><meta name="description" content="A simple webpage" /><title>Hello</title></head><body><a href="https://www.example.com">Go to Example Website</a></body></html>"`;
+
+exports[`DocumentTree > import/export > tree.JSON 1`] = `
+{
+  "children": [
+    {
+      "name": "html",
+      "nodeType": 10,
+      "publicId": "",
+      "systemId": "",
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": [
+                [
+                  "charset",
+                  "utf-8",
+                ],
+              ],
+              "nodeType": 1,
+              "tagName": "meta",
+            },
+            {
+              "attributes": [
+                [
+                  "name",
+                  "viewport",
+                ],
+                [
+                  "content",
+                  "width=device-width",
+                ],
+              ],
+              "nodeType": 1,
+              "tagName": "meta",
+            },
+            {
+              "attributes": [
+                [
+                  "name",
+                  "description",
+                ],
+                [
+                  "content",
+                  "A simple webpage",
+                ],
+              ],
+              "nodeType": 1,
+              "tagName": "meta",
+            },
+            {
+              "children": [
+                {
+                  "nodeType": 3,
+                  "text": "Hello",
+                },
+              ],
+              "nodeType": 1,
+              "tagName": "title",
+            },
+          ],
+          "nodeType": 1,
+          "tagName": "head",
+        },
+        {
+          "children": [
+            {
+              "attributes": [
+                [
+                  "href",
+                  "https://www.example.com",
+                ],
+              ],
+              "children": [
+                {
+                  "nodeType": 3,
+                  "text": "Go to Example Website",
+                },
+              ],
+              "nodeType": 1,
+              "tagName": "a",
+            },
+          ],
+          "nodeType": 1,
+          "tagName": "body",
+        },
+      ],
+      "nodeType": 1,
+      "tagName": "html",
+    },
+  ],
+  "nodeType": 9,
+}
+`;
+
+exports[`DocumentTree > query selectors > querySelector a 1`] = `
+{
+  "attributes": [
+    [
+      "href",
+      "https://www.example.com",
+    ],
+  ],
+  "children": [
+    {
+      "nodeType": 3,
+      "text": "Go to Example Website",
+    },
+  ],
+  "nodeType": 1,
+  "tagName": "a",
+}
+`;
+
+exports[`DocumentTree > query selectors > querySelectorAll meta 1`] = `
+[
+  {
+    "attributes": [
+      [
+        "charset",
+        "utf-8",
+      ],
+    ],
+    "nodeType": 1,
+    "tagName": "meta",
+  },
+  {
+    "attributes": [
+      [
+        "name",
+        "viewport",
+      ],
+      [
+        "content",
+        "width=device-width",
+      ],
+    ],
+    "nodeType": 1,
+    "tagName": "meta",
+  },
+  {
+    "attributes": [
+      [
+        "name",
+        "description",
+      ],
+      [
+        "content",
+        "A simple webpage",
+      ],
+    ],
+    "nodeType": 1,
+    "tagName": "meta",
+  },
+]
+`;

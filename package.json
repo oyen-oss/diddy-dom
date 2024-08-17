@@ -1,0 +1,43 @@
+{
+  "name": "@oyen-oss/dom",
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/src/main.d.ts",
+      "default": "./dist/src/main.js"
+    }
+  },
+  "files": [
+    "dist/src/*.js",
+    "dist/src/*.d.ts",
+    "dist/src/*.map",
+    "dist/lib/*.js",
+    "dist/lib/*.d.ts",
+    "dist/lib/*.map"
+  ],
+  "scripts": {
+    "preversion": "make test"
+  },
+  "dependencies": {
+    "css-selector-parser": "^3.0.5"
+  },
+  "devDependencies": {
+    "@block65/eslint-config": "^12.0.1",
+    "@types/node": "20",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "type-fest": "^4.23.0",
+    "typescript": "5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@9.7.1+sha512.faf344af2d6ca65c4c5c8c2224ea77a81a5e8859cbc4e06b1511ddce2f0151512431dd19e6aff31f2c6a8f5f2aced9bd2273e1fed7dd4de1868984059d2c4247"
+}
