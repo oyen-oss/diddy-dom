@@ -1,7 +1,6 @@
 import { createParser, type AstRule } from 'css-selector-parser';
 import { LeafNode } from './LeafNode.js';
 import { Node } from './Node.js';
-import { TextNode } from './TextNode.js';
 import type { NodeType, ChildNode, NonLeafNode } from './types.js';
 
 export const kquerySelectorAll = Symbol('querySelectorAll');
