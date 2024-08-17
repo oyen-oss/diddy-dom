@@ -1,4 +1,4 @@
-import type { ElementNode } from './ElementNode.js';
+import type { AbstractParentNode } from './AbstractParentNode.js';
 import { LeafNode } from './LeafNode.js';
 import { NodeType, type CommentNodeJSON } from './types.js';
 
@@ -10,11 +10,11 @@ export class CommentNode extends LeafNode<
   NodeType.COMMENT_NODE,
   CommentNodeData
 > {
-  constructor(parentNode: ElementNode, data: CommentNodeData) {
+  constructor(parentNode: AbstractParentNode, data: CommentNodeData) {
     super(NodeType.COMMENT_NODE, parentNode, data);
   }
 
-  public static from(parentNode: ElementNode, data: CommentNodeJSON) {
+  public static from(parentNode: AbstractParentNode, data: CommentNodeJSON) {
     return new CommentNode(parentNode, data);
   }
 
