@@ -45,4 +45,4 @@ dev:
 
 .PHONY: smoketest
 smoketest: node_modules
-	node --input-type=module -e "import * as mod from '@oyen-oss/dom';console.log(mod)"
+	node --input-type=module -e "import * as mod from '@oyen-oss/diddy-dom';console.log(mod)"

@@ -1,4 +1,4 @@
-import { DocumentTree } from '@oyen-oss/dom';
+import { DocumentTree } from '@oyen-oss/diddy-dom';
 
 const tree = DocumentTree.from({
   nodeType: 9,
