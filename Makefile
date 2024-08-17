@@ -36,4 +36,4 @@ dev: dist-watch
 
 .PHONY: smoketest
 smoketest: node_modules
-	node --input-type=module -e "import '@oyen-oss/diddy-dom'"
+	node --input-type=module -e "import '@oyenjs/diddy-dom'"

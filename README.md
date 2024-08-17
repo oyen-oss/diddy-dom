@@ -1,4 +1,4 @@
-# @oyen-oss/diddy-dom
+# @oyenjs/diddy-dom
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
@@ -15,7 +15,7 @@ Currently under active development.
 #### Create a document tree manually.
 
 ```typescript
-import { DocumentTree } from '@oyen-oss/diddy-dom';
+import { DocumentTree } from '@oyenjs/diddy-dom';
 
 const tree = new DocumentTree();
 

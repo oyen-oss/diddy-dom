@@ -19,9 +19,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           cache: 'pnpm'
-          scope: '@oyen-oss'
-          registry-url: 'https://npm.pkg.github.com'
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - run: make dist
 
