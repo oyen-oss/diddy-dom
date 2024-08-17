@@ -12,7 +12,7 @@ Currently under active development.
 
 ## Examples
 
-Create a document tree manually.
+#### Create a document tree manually.
 
 ```typescript
 import { DocumentTree } from '@oyen-oss/diddy-dom';
@@ -43,7 +43,7 @@ console.log(tree.innerHtml);
 // <!DOCTYPE html><html><head><title>Hello</title><body><a href="https://www.example.com">Go to Example Website</a></body></head></html>
 ```
 
-Export a tree to JSON
+#### Export a tree to JSON
 
 ```typescript
 const treeJson = tree.toJSON();
@@ -97,7 +97,7 @@ console.log(treeJson);
 // }
 ```
 
-Create a document tree from a JSON object and get the inner HTML.
+#### Create a document tree from a JSON object and get the inner HTML.
 
 ```typescript
 const tree = DocumentTree.from(treeJson);
@@ -107,7 +107,7 @@ console.log(tree.innerHtml);
 // <html><head><meta charset="UTF-8"><title>Hello</title></head><body><a href="https://www.example.com">Go to Example Website</a></body></html>
 ```
 
-Query a tree using CSS selectors.
+#### Query a tree using CSS selectors.
 
 ```typescript
 const tree = DocumentTree.from(treeJson);
@@ -115,8 +115,12 @@ const tree = DocumentTree.from(treeJson);
 console.log(tree.querySelector('title')?.textContent);
 
 // Hello
+```
 
 ## License
 
 Licensed under the terms of the MIT license. See the [LICENSE](LICENSE.md) file for more details.
+
+```
+
 ```
